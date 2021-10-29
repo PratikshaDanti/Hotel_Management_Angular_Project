@@ -1,0 +1,133 @@
+<style>
+  .test {
+  transition: .4s;
+  }
+  .test:hover {
+  transition: .4s;
+  background-color:rgba(127, 127, 127, 0.5);
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<nav class="navbar  navbar-expand-lg navbar-light bg-dark ">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active mr-4">
+        <img src="/assets/images/logo.jpg" class="img-responsive center-block" width="100" height="35" alt="Responsive image">
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-white test" routerLink="/home"><i class="fa fa-home" ></i> Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-white test" routerLink="/login"><i class='fas fa-user-alt'></i> Admin Login <span class="sr-only">(current)</span></a>
+      </li>
+
+    
+
+      <li class="nav-item active">
+        <a class="nav-link text-white test" routerLink="/rooms"><i class='fas fa-bed'></i> Rooms <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-white test" routerLink="/transport"><i class='fas fa-car'></i> Transport Services <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-white test" routerLink="/features"><i class='fas fa-clipboard-list'></i> Features <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-white test" routerLink="/about"><i class='fas fa-user-friends'></i> About Us <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-white test" routerLink="/contact"><i class='fas fa-phone-alt'></i> Contact Us <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-white test" routerLink="/reviews"><i class="fa fa-comments"></i> Reviews <span class="sr-only">(current)</span></a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+<br>
+ 
+<router-outlet></router-outlet>
+<br>
+<footer class="text-center navbar-fixed-bottom bg-light text-white" >
+  <!-- Grid container -->
+  <div class="container pt-3">
+    <!-- Section: Social media -->
+    <section class="mb-3">
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-white p-3 bg-dark" >
+    © 2020 Copyright:
+    <a class="text-white" >ParkView.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
